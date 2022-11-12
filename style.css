@@ -232,6 +232,7 @@ header{
 .cars-list{
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .car{
@@ -360,12 +361,25 @@ header{
 /* Footer */
 
 footer{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #d9d9d9;
-    margin-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #d9d9d9;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-items{
