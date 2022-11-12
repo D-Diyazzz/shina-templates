@@ -45,3 +45,16 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
+
+// Select img
+let imgs = document.querySelectorAll(".car-img");
+let mainImg = document.querySelector(".main-car-img");
+let src = "file:///home/diyaz-u/university/web/exam/templates/media/"
+
+// console.log(img[0].currentSrc.split("file:///home/diyaz-u/university/web/exam/templates/media/"));
+imgs.forEach(img => {
+    img.addEventListener('click', () => {
+        let fileSrc = img.currentSrc.split(src);
+        mainImg.attributes[0].value = "media/" + fileSrc[1];        
+    })
+})
