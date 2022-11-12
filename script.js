@@ -1,3 +1,21 @@
+// header menu
+function burgerMenu(){
+    let menu = document.getElementById('burger-menu');
+    let burger = document.getElementById('burger');
+    let burgerDel = document.getElementById('burger-del');
+    
+    menu.style.display = 'flex';
+    burgerDel.style.display = 'inline';
+    burger.style.display = 'none';
+
+    burgerDel.addEventListener('click', () => {
+        menu.style.display = 'none';
+        burger.style.display = 'inline';
+        burgerDel.style.display = 'none';
+    })
+}
+
+
 //Filter menu
 let dropdowns = document.querySelectorAll('.dropdown');
 

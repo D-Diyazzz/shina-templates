@@ -10,15 +10,30 @@
 <body>
     
     <header>
-        <a href="main.html"><img src="media/logo.jpg" class="logo"></a>
-        <a href="#" class="header-list">Машины</a>
-        <div class="header-menu">
-            <a href="#">Регистрация</a>
-            <a href="#">
+        <div class="header">
+            <a href="main.html"><img src="media/logo.jpg" class="logo"></a>
+            <a href="#" class="header-list">Машины</a>
+            <div class="header-menu">
+                <a href="#">Регистрация</a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Личный кабинет
+                </a>
+                <button>Опубликовать</button>
+            </div>
+            <div class="burger" id="burger" onclick="burgerMenu()">
+                <i class=" fa-solid fa-bars"></i></div>
+            <div id="burger-del" class="burger-del">
+                <i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <a href="#" class="burger-list">Машины</a>
+            <a href="#" class="burger-list">Регистрация</a>
+            <a href="#" class="burger-list">
                 <i class="fa-regular fa-user"></i>
                 Личный кабинет
             </a>
-            <button>Опубликовать</button>
+            <button class="burger-button">Опубликовать</button>
         </div>
     </header>
 
