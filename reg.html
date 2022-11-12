@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Register</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <a href="main.html"><img src="media/logo.jpg" class="logo"></a>
+            <a href="#" class="header-list">Машины</a>
+            <div class="header-menu">
+                <a href="#">Регистрация</a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Личный кабинет
+                </a>
+                <button>Опубликовать</button>
+            </div>
+            <div class="burger" id="burger" onclick="burgerMenu()">
+                <i class=" fa-solid fa-bars"></i></div>
+            <div id="burger-del" class="burger-del">
+                <i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <a href="#" class="burger-list">Машины</a>
+            <a href="#" class="burger-list">Регистрация</a>
+            <a href="#" class="burger-list">
+                <i class="fa-regular fa-user"></i>
+                Личный кабинет
+            </a>
+            <button class="burger-button">Опубликовать</button>
+        </div>
+    </header>
+
+    <div class="content">
+         <form class="register-form">
+            <h1>Регистрация</h1>
+
+            <div class="register-block">
+                <p>Укажите вашу почту</p>
+                <input type="text" class="register-input" placeholder="Укажите вашу почту" name="email" id="email" required>
+            </div>
+
+            <div class="register-block">
+                <p>Укажите ваш номер телефона</p>
+                <input type="text" class="register-input" placeholder="Укажите ваш номер телефона" name="phone" id="phone" required>
+            </div>
+
+            <div class="register-block">
+                <p>Укажите ваше имя</p>
+                <input type="text" class="register-input" placeholder="Укажите ваше имя" name="name" id="name" required>
+            </div>
+
+            <div class="register-block">
+                <p>Введите пароль</p>
+                <input type="text" class="register-input" placeholder="Введите пароль" name="password" id="password" required>
+            </div>
+            <div class="register-block">
+                <p>Повторите password</p>
+                <input type="text" class="register-input" placeholder="Повторите password" name="password2" id="password2" required>
+            </div>
+
+            <div class="register-block">
+                <p>Пол</p>
+                <input type="radio" value="Мужской" name="gender" id="gender-male">
+                <label for="gender-male">Мужской</label>
+                <input type="radio" value="Женский" name="gender" id="gender-femail">
+                <label for="gender-femail">Женский</label>
+            </div>
+            
+            <div class="register-block">
+                <p>Выберите Регион</p>
+                <div class="filter-menu">
+                    <div class="dropdown dropdown-reg">
+                        <div class="select select-reg">
+                            <span class="selected selected-reg">Регион</span>
+                            <i class="fa-solid fa-chevron-down caret caret-reg"></i>
+                        </div>
+                        <ul class="menu menu-reg">
+                            <li>Акмолинская область</li>
+                            <li>Алматинская область</li>
+                            <li>Карагандинская область</li>
+                            <li>Мангистауская область</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-block">
+                <p>Выберите Город</p>
+                <div class="filter-menu">
+                    <div class="dropdown dropdown-reg">
+                        <div class="select select-reg">
+                            <span class="selected selected-reg">город</span>
+                            <i class="fa-solid fa-chevron-down caret caret-reg"></i>
+                        </div>
+                        <ul class="menu menu-reg">
+                            <li>Алмата</li>
+                            <li>Караганда</li>
+                            <li>Астана</li>
+                            <li>Актау</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-submit">
+                <p>При нажатии на кнопку "Register" вы соглашаетесь с <a href="#"> правилами использования сервиса</a>.</p>
+                <button type="submit" class="register-btn">Register</button>
+            </div>
+
+         </form>
+    </div>
+
+    <footer>
+        <div class="footer-items">
+            <p>© 2022—2022 ТОО «Шина»</p>
+            <p><a href="#">Пользовательское соглашение</a></p>
+            <p><a href="#">Правила размещения </a></p>
+        </div>
+
+        <div class="footer-items">
+            <p><a href="#">О сайте</a></p>
+            <p><a href="#">Контакты</a></p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0b3e7c5e58.js" crossorigin="anonymous"></script>
+</body>
+</html>

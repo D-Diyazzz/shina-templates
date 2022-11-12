@@ -275,6 +275,88 @@ header{
     font-weight: bold;
 }
 
+/* Register */
+.register-form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+.register-form h1{
+    color: #ff914d;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.register-block{
+    margin: auto;
+    width: 330px;
+}
+
+.register-block p{
+    margin-bottom: 5px;
+}
+
+.register-submit{
+    margin: auto;
+    width: 330px;
+    margin-top: 50px;
+}
+
+.register-btn{
+    width: 330px;
+    height: 50px;
+    background-color: #ff914d;
+    border: 5px solid #ff914d;
+    border-radius: 5px;
+    color:white;
+    font-size:16px;
+    margin: 0 auto;
+}
+
+.register-btn:hover{
+    background-color: white;
+    color: black;
+
+
+}
+
+.register-input{
+    width: 330px;
+    height: 40px;
+    background-color: #f2f4f5;
+    border: 0;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.register-input:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.dropdown-reg{
+    width: 330px;
+}
+
+.select-reg{
+    background-color: #f2f4f5;
+}
+
+.selected-reg{
+    margin-left: -60px;
+}
+
+.caret-reg{
+    margin-right: -60px;
+}
+
+.menu-reg{
+    width: 330px;
+}
+
 /* Footer */
 
 footer{
