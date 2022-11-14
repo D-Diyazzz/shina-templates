@@ -231,6 +231,11 @@ header{
 }
 
 /* Cars list */
+.car-list-href{
+    color: black;
+    text-decoration: none;
+}
+
 .cars-list{
     display: flex;
     flex-direction: column;
